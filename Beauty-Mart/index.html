@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Roboto:ital,wght@0,100;0,300;0,
+400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+  <title>Beauty-Mart</title>
+
+</head>
+
+<body>
+  <div class="main">
+
+    <!-- section-1 -->
+    <section class="nav_wrapper">      
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-11 col-sm-10 col-10">
+                    <form class="d-flex mt-2">
+                      <div class="search_wrap">
+                        <input class="form-control " type="search " placeholder="Search for product "
+                          aria-label="Search ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="col-md-1 col-sm-2 col-2 mt-2">
+                    <div class="topside_btn">
+                      <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling">
+                        <i class="fa-solid fa-bars"></i>
+                      </button>
+                    </div>
+
+                    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                      id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="offcanvas-header">
+                        <h1 class="offcanvas-title" id="offcanvasScrollingLabel">Beauty-Mart</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body m-auto">
+                        <div class="navbar">
+                          <ul>
+                            <li><a href="#nav-all-tab">All</a></li>
+                            <li><a href="#nav-men-tab">Men</a></li>
+                            <li><a href="#nav-women-tab">Women</a></li>
+                            <li><a href="#nav-kids-tab">Kids</a></li>
+                            <li><a href="#nav-cosmetics-tab">Cosmetics</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>    
+    </section>
+
+    <!-- section-2 -->
+
+    <section class="header_wrapper">      
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+
+              <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="header_content">
+                    <div class="carousel-item active">
+                      <div class="img_wrapper">
+                        <img src="img/main-removebg-preview.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="text_wrapper">
+                        <h1>New Collection</h1>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="img_wrapper">
+                        <img src="img/main-removebg-preview.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="text_wrapper">
+                        <h1>New Collection</h1>
+                      </div>
+                    </div>
+
+                    <div class="carousel-item">
+                      <div class="img_wrapper">
+                        <img src="img/main-removebg-preview.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="text_wrapper">
+                        <h1>New Collection</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- section-3 -->
+
+    <section class="product_wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-12">
+
+              <div class="nav_wrapper">
+                <nav>
+                  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link " id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all"
+                      type="button" role="tab" aria-controls="nav-home" aria-selected="true">All</button>
+                    <button class="nav-link" id="nav-men-tab" data-bs-toggle="tab" data-bs-target="#nav-men"
+                      type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Men</button>
+                    <button class="nav-link" id="nav-women-tab" data-bs-toggle="tab" data-bs-target="#nav-women"
+                      type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Women</button>
+                    <button class="nav-link" id="nav-kids-tab" data-bs-toggle="tab" data-bs-target="#nav-kids"
+                      type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Kids</button>
+                    <button class="nav-link" id="nav-cosmetics-tab" data-bs-toggle="tab" data-bs-target="#nav-cosmetics"
+                      type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Cosmetics</button>
+                  </div>
+                </nav>
+              </div>
+
+              <div class="tab-content" id="nav-tabContent">
+
+                <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab"
+                  tabindex="0">
+
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-6 col-sm-6 col-6 px-lg-4 py-5">
+                        <div class="product_img">
+                          <img src="img/women-1.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Georgette A-line Gown</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 px-md-5 py-5">
+                        <div class="product_img">
+                          <img src="img/men-3.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Men's Stripped Formal Shirt</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <a href="plazo.html"><img src="img/women-5.webp" alt=""></a>
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Cotton Plazo-Suit</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kid3.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby-Boy Formal Outfit </h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-1.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Men's Stripped Classy Shirt</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-5.jpg" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Lotus Liquid Foundation</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids7.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby Girl's Shimmer Shoes</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-2.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Mens Black Strechable Tousers</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="nav-men" role="tabpanel" aria-labelledby="nav-men-tab" tabindex="0">
+
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-2.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Levi's Black Trousers</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-5.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Men's Black Sando
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/product-2.jpg" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Nude Color Shorts</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-1.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Men's Stripped Classy Shirt</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-3.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Men's Stripped Formal Shirt</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-4.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5> Floral Printed Shirt</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/product-3.jpg" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Denim Jacket</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/men-1.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Men's Stripped Classy Shirt</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="tab-pane fade" id="nav-women" role="tabpanel" aria-labelledby="nav-women-tab" tabindex="0">
+
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-1.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h6></h6>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-2.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>White Short Dress</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-3.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Stripped Top</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-4.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Floral Kurti with Pant</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-5.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Cotton Plazo-Suit</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-6.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Floral Printed Dress</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-3.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Stripped Top</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/women-1.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Georgette A-line Gown</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-kids" role="tabpanel" aria-labelledby="nav-kids-tab" tabindex="0">
+
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kid3.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby-Boy Formal Outfit</h5>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids4.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby-Boy Formal Outfit</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids1.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby-Girl Frock</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids2.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby-Girl Net Frock</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids8.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby Girl's Shimmer Shoes</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids7.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby Girl's Shimmer Shoes</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids6.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby-Boy Casual Dress</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/kids5.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Baby-Boy CAsual Suit</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="nav-cosmetics" role="tabpanel" aria-labelledby="nav-cosmetics-tab"
+                  tabindex="0">
+                  <div class="container">
+                    <div class="row">
+
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-1.jpg" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-10.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-2.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-7.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-5.jpg" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-6.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-7.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6 col-6 p-5">
+                        <div class="product_img">
+                          <img src="img/cos-8.webp" alt="">
+                        </div>
+                        <div class="product_price mt-2">
+                          <h5>Herbal Products</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <!-- section-4 -->
+
+  
+      <footer>
+        <div class="container">
+          <div class="footer_wrapper">
+            <div class="row">
+
+              <div class="col-md-3 col-12">
+                <div class="footer_abouts">
+                  <div class="footer_head">
+                    <h4>About Us</h4>
+                  </div>
+                  <ul class="footer_dis_list">
+                    <li>634 Campbell St.<br>
+                      Tofino BC</li>
+                    <li>P 844.680.4184</li>
+                    <li>E info@beauty-mart.com</li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div class="col-md-3 col-6">
+                <div class="footer_Collection">
+                  <h4>Our Collection</h4>
+                  <ul class="footer_dis_list">
+                    <li><a href="#">All</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Cosmetics</a></li>
+                  </ul>
+                </div>
+              </div>
+
+
+              <div class="col-md-3 col-6">
+                <div class="footer_Branches">
+                  <h4>Our Branches</h4>
+                  <ul class="footer_dis_list">
+                    <li><a href="#">Navi,Mumbai</a></li>
+                    <li><a href="#">Surat,Gujrat</a></li>
+                    <li><a href="#">Dehradun,Uttrakhand</a></li>
+                    <li><a href="#">Delhi</a></li>
+
+                  </ul>
+                </div>
+              </div>
+
+
+              <div class="col-md-3">
+                <h4>Ask your quaries</h4>
+                <form action="">
+                  <textarea name="" id="" cols="32" rows="3"></textarea>
+                </form>
+                <div class="text-end pe-4">
+                  <button class="btn btn-info">Submit</button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+   
+  
+  
+    </div>
+
+  <!-- section-5 -->
+  <!-- section-6 -->
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
